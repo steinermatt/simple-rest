@@ -1,0 +1,4 @@
+/bin
+/war
+*.DS_Store
+/target
