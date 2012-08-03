@@ -31,25 +31,6 @@ import com.sap.nwcloud.demo.model.ObjectFactory;
 public class FeedService extends BaseService
 {
 
-	/**
-	 * 
-	 * @see http ://svn.apache.org/repos/asf/cxf/trunk/rt/frontend/jaxrs/src/main
-	 *      /java/org/apache/cxf/jaxrs/ext/MessageContext.java
-	 * @see http://cxf.apache.org/docs/jax-rs-basics.html
-	 */
-	@Context
-	private MessageContext msgContext = null;
-
-	public MessageContext getMsgContext()
-	{
-		return msgContext;
-	}
-
-	public void setMsgContext(MessageContext msgContext)
-	{
-		this.msgContext = msgContext;
-	}
-
 	@GET
 	@Path("/")
 	public FeedList getFeeds(@PathParam("") FeedQueryByElements query)
