@@ -33,8 +33,7 @@ public class FeedService extends BaseService
 
 	/**
 	 * 
-	 * @see http 
-	 *      ://svn.apache.org/repos/asf/cxf/trunk/rt/frontend/jaxrs/src/main
+	 * @see http ://svn.apache.org/repos/asf/cxf/trunk/rt/frontend/jaxrs/src/main
 	 *      /java/org/apache/cxf/jaxrs/ext/MessageContext.java
 	 * @see http://cxf.apache.org/docs/jax-rs-basics.html
 	 */
@@ -53,7 +52,6 @@ public class FeedService extends BaseService
 
 	@GET
 	@Path("/")
-	@Consumes({ "application/json"})
 	public FeedList getFeeds(@PathParam("") FeedQueryByElements query)
 	{
 		
@@ -61,13 +59,7 @@ public class FeedService extends BaseService
 
 		Collection<Feed> feeds = new ArrayList<Feed>(1);
 		
-/*		Feed feed = new ObjectFactory().createFeed();
-
-		feed.setCreatedAt(new Date());
-		feed.setDescription("Test Feed");
-		feed.setTitle("Feed Title");*/
-		
-		
+		// dirty hardcoded string ;)
 		final String url = "http://scn.sap.com/community/feeds/blogs";
 		FeedDAO dao = DAOFactory.getInstance().getDAO();
 		
@@ -82,7 +74,4 @@ public class FeedService extends BaseService
 
 		return list;
 	}
-	
-	
-	
 }

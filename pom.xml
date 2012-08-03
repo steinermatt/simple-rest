@@ -17,7 +17,7 @@
 		<!-- Properties that hold information on the location and version of the 
 			SAP NetWeaver Cloud SDK -->
 		<nw.cloud.sdk.path>${env.HOME}/dev/neo-sdk-1.7.0</nw.cloud.sdk.path> 
-		<nw.cloud.sdk.version>1.5.2</nw.cloud.sdk.version>
+		<nw.cloud.sdk.version>1.7.0</nw.cloud.sdk.version>
 
 		<!-- Property that holds supported JDK version for the given SAP NetWeaver 
 			Cloud SDK -->
