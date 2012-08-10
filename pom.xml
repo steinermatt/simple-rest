@@ -69,15 +69,13 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
-			<scope>system</scope>
-			<systemPath>${nw.cloud.sdk.path}/api/javax.servlet-3.0.0.v201103241009.jar</systemPath>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.6.1</version>
-			<scope>system</scope>
-			<systemPath>${nw.cloud.sdk.path}/api/slf4j-api-1.6.1.jar</systemPath>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
